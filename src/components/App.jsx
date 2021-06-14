@@ -1,3 +1,18 @@
+/**
+ *  Copyright 2021 Patrick L. Branson
+ * 
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ * 
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ */
 import React from "react";
 import Sketch from "react-p5";
 
@@ -63,7 +78,8 @@ function App() {
     p5.stroke(255);
     p5.strokeWeight(8);
 
-    p5.fill(127);
+    // The color of the pendulum weight (bob)
+    p5.fill(255, 0, 0);
 
     p5.line(origin.x, origin.y, bob.x, bob.y);
     p5.circle(bob.x, bob.y, 64);
