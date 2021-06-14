@@ -4,7 +4,7 @@ import Sketch from "react-p5";
 function App() {
 
   /**
-   * 
+   * The angle of the pendulum
    */
   let angle;
 
@@ -19,20 +19,23 @@ function App() {
   let acceleration = 0;
 
   /**
-   * 
+   * The weight or bob at the bottom of the pendulum
    */
   let bob;
 
   /**
-   * 
+   * The length of the rope or metal that holds the pendulum
    */
   let length;
 
   /**
-   * 
+   * The origin position of where the pendulum hangs on the screen
    */
   let origin;
 
+  /**
+   * The force of gravity in the pendulum
+   */
   let gravity = 1;
 
   let setup = (p5, canvasParentRef) => {
